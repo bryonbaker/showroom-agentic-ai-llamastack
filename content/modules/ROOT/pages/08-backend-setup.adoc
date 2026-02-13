@@ -112,8 +112,8 @@ graph TB
 **Step 1: User makes a request**::
 A user asks a natural language question: "Find the customer with email thomashardy@example.com and show their order history"
 
-**Step 2: Llama Stack agent reasons**::
-The agent analyzes the request and determines it needs 2 capabilities:
+**Step 2: The LLM reasons about the request**::
+The agent sends the request to the LLM, which analyzes it and determines that 2 capabilities are needed:
 - Search for a customer by email
 - Retrieve order history for that customer
 
