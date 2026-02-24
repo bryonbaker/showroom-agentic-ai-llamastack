@@ -187,6 +187,8 @@ Welcome! See 'oc help' to get started.
 
 Your cluster and namespace have a Custom Resource Definition (CRD) available for the Kind *LlamaStackDistribution* therefore you can create your own instance of a Llama Stack Server. 
 
+Using *Terminal 1*, check if the LlamaStackDistribution CRD is available:
+
 [.console-input]
 [source,bash,role="copypaste",subs=attributes+]
 ----
@@ -201,7 +203,9 @@ LlamaStackOperator
 LlamaStackDistribution  true
 ----
 
-First git clone a copy of the project files
+The lab materials are stored in a GitHub repository, you can find the URL in the *Resources* section of this page.
+
+Now, git-clone a copy of the project files into your home directory:
 
 [.console-input]
 [source,bash,role="copypaste",subs=attributes+]
@@ -247,12 +251,12 @@ odh-trusted-ca-bundle         2      64m
 openshift-service-ca.crt      1      65m
 ----
 
-You can also view the ConfigMap via the `oc` command. 
+You can also view the llamastack configuration in the ConfigMap via the `oc` command. 
 
 [.console-input]
 [source,yaml,role="copypaste",subs=attributes+]
 ----
-oc get configmap llama-stack-config -o yaml
+oc get configmap llama-stack-config -o jsonpath='{.data.run\.yaml}' ; echo
 ----
 
 You can review the models available on the provided link:{litellm_api_base_url}[Model as a Service - MaaS^] using the following command:
