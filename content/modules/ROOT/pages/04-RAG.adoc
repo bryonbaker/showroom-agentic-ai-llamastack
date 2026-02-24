@@ -5,7 +5,7 @@ capabilities.
 
 RAG stands for Retrieval Augumented Generation and is a pattern often used to augment the knowledge of a LLM.  Allowing you to bring private data without having to train nor fine-tune a model. 
 
-Typical RAG implementations involve both an ingestion as well as retrieval process.  Some folks refer to these processes as pipleines. 
+Typical RAG implementations involve both an ingestion as well as retrieval process.  Some folks refer to these processes as pipelines. 
 
 image::rag_high_level_diagram.png[]
 
