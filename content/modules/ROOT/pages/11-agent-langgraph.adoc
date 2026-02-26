@@ -110,7 +110,7 @@ The tools available to me are designed for managing customer data, order history
 
 [NOTE]
 ====
-*Why did the agent refuse?* The LangGraph backend is configured with a system prompt that restricts it to customer and finance operations only. When asked general knowledge questions, the agent correctly identifies that none of its registered tools can help and declines to guess. This is intentional — in production, you want agents to stay within their defined scope rather than hallucinating answers outside their domain.
+*Why did the agent refuse?* The LangGraph backend is configured with a system prompt that restricts it to customer and finance operations only. When asked general knowledge questions, the agent correctly identifies that none of its registered tools can help and declines to guess. This is intentional — in production, you want agents to stay within their defined scope.
 ====
 
 Try questions specific to the domain of the Agent thanks to the previously deployed and registered Customer and Finance MCP servers
